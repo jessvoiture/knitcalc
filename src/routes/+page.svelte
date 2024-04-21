@@ -128,7 +128,7 @@
 				</div>
 
 				<div style="display: flex; align-items: center;">
-					<p>Desired head hole circumference:</p>
+					<p>Desired neckband circumference:</p>
 					<input type="number" bind:value={$neckCircumference} />
 					<p>{selectedUnit}</p>
 				</div>
