@@ -99,16 +99,36 @@
 				<h3>Gauge</h3>
 
 				<div style="display: flex; align-items: center;">
-					<input type="number" bind:value={$gaugeSts} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$gaugeSts}
+					/>
 					<p>sts per</p>
-					<input type="number" bind:value={$gaugeWidth} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$gaugeWidth}
+					/>
 					<p>{selectedUnit}</p>
 				</div>
 
 				<div style="display: flex; align-items: center;">
-					<input type="number" bind:value={$gaugeRows} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$gaugeRows}
+					/>
 					<p>rows per</p>
-					<input type="number" bind:value={$gaugeHeight} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$gaugeHeight}
+					/>
 					<p>{selectedUnit}</p>
 				</div>
 			</div>
@@ -117,31 +137,56 @@
 				<h3>Garment Details</h3>
 				<div style="display: flex; align-items: center;">
 					<p>Desired width from armpit to armpit:</p>
-					<input type="number" bind:value={$garmentWidth} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$garmentWidth}
+					/>
 					<p>{selectedUnit}</p>
 				</div>
 
 				<div style="display: flex; align-items: center;">
 					<p>Desired length from the back of the neck to armpit:</p>
-					<input type="number" bind:value={$neckToArmpit} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$neckToArmpit}
+					/>
 					<p>{selectedUnit}</p>
 				</div>
 
 				<div style="display: flex; align-items: center;">
 					<p>Desired neckband circumference:</p>
-					<input type="number" bind:value={$neckCircumference} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$neckCircumference}
+					/>
 					<p>{selectedUnit}</p>
 				</div>
 
 				<div style="display: flex; align-items: center;">
 					<p># of stitches cast on for underarm (one side):</p>
-					<input type="number" bind:value={$underarmCO} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$underarmCO}
+					/>
 					<p>sts</p>
 				</div>
 
 				<div style="display: flex; align-items: center;">
 					<p># of raglan stitches (total):</p>
-					<input type="number" bind:value={$raglanCount} />
+					<input
+						type="number"
+						min="0"
+						oninput="validity.valid||(value='');"
+						bind:value={$raglanCount}
+					/>
 					<p>sts</p>
 				</div>
 			</div>
